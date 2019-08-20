@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Open Science Hardware in Latin America</title>
+    <meta charset="utf-8">
+    <style>
+          @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+          @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+          @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+          body {
+            font-family: 'Droid Serif';
+          }
+          h1, h2, h3 {
+            font-family: 'Yanone Kaffeesatz';
+            font-weight: 400;
+            margin-bottom: 0;
+          }
+          .remark-slide-content h1 { font-size: 3em; }
+          .remark-slide-content h2 { font-size: 2em; }
+          .remark-slide-content h3 { font-size: 1.6em; }
+          .footnote {
+            position: absolute;
+            bottom: 3em;
+          }
+          li p { line-height: 1.25em; }
+          .red { color: #fa0000; }
+          .large { font-size: 2em; }
+          a, a > code {
+            color: rgb(249, 38, 114);
+            text-decoration: none;
+          }
+          code {
+            background: #e7e8e2;
+            border-radius: 5px;
+          }
+          .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+          .remark-code-line-highlighted     { background-color: #373832; }
+          .pull-left {
+            float: left;
+            width: 47%;
+          }
+          .pull-right {
+            float: right;
+            width: 47%;
+          }
+          .pull-right ~ p {
+            clear: both;
+          }
+          #slideshow .slide .content code {
+            font-size: 0.8em;
+          }
+          #slideshow .slide .content pre code {
+            font-size: 0.9em;
+            padding: 15px;
+          }
+          .inverse {
+            background: #272822;
+            color: #777872;
+            text-shadow: 0 0 20px #333;
+          }
+          .inverse h1, .inverse h2 {
+            color: #f3f3f3;
+            line-height: 0.8em;
+          }
+
+          /* Slide-specific styling */
+          #slide-inverse .footnote {
+            bottom: 12px;
+            left: 20px;
+          }
+          #slide-how .slides {
+            font-size: 0.9em;
+            position: absolute;
+            top:  151px;
+            right: 140px;
+          }
+          #slide-how .slides h3 {
+            margin-top: 0.2em;
+          }
+          #slide-how .slides .first, #slide-how .slides .second {
+            padding: 1px 20px;
+            height: 90px;
+            width: 120px;
+            -moz-box-shadow: 0 0 10px #777;
+            -webkit-box-shadow: 0 0 10px #777;
+            box-shadow: 0 0 10px #777;
+          }
+          #slide-how .slides .first {
+            background: #fff;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            z-index: 1;
+          }
+          #slide-how .slides .second {
+            position: relative;
+            background: #fff;
+            z-index: 0;
+          }
+
+          /* Two-column layout */
+          .left-column {
+            color: #777;
+            width: 20%;
+            height: 92%;
+            float: left;
+          }
+            .left-column h2:last-of-type, .left-column h3:last-child {
+              color: #000;
+            }
+          .right-column {
+            width: 75%;
+            float: right;
+            padding-top: 1em;
+          }
+        </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+.right[
+![logos](img/logos.png)
+]
+
+
+# Open science hardware in Latin America
+## Democratizing science & tech in the region?
+
+.footnote[###Julieta Arancio
+.right[jarancio@unsam.edu.ar / TW: @cassandreces]]
+
+???
+- phd student from Argentina, in Geneva, Science and Technology Studies, background environmental sciences, part of GOSH community
+
+- develop work at cenit, part of unsam, supported scholarship conicet
+
+---
+class: middle
+
+# Agenda
+
+
+1. What is open science hardware?
+
+2. GOSH community
+
+3. Claims about open science hardware
+
+4. Research problem
+
+5. Analytic framework
+
+6. Methods & Tools
+
+7. Expected contribution
+
+8. Preliminary results
+
+9. Future steps
+
+
+---
+
+class: middle, center
+
+# Open science hardware means sharing the designs of tools for research
+
+.center[
+![education](img/edu.png)
+![academia](img/academia.png)
+![community science](img/community.png)
+![social innovation](img/SI.png)
+![art](img/art.png)
+]
+
+???
+Case for each one:
+
+- Tech academy: using oschw promote stem education and digital skills in kids from low resources contexts, used as a tool for challenge based learning, critical pedagogies
+
+- CERN: accelerator instrumental is open, Repairability, doesn't depend on one company, absolute control of the process. Microscopes are very common, but also nanotechnology tools, e.g.
+
+- Public lab: oschw tools for community science, questions outside academia that no one answers, fukushima and safecast, public lab and bp oilspill mexico, ohw as tool for co-producing knowledge
+
+- interspecifics: ohw as experimental platform, in this case for listening the electric pulses of bacteria by turning them into sound, also biohacking is important trend
+
+! hardware is not only electronic, also mechanic and wetware
+
+- SDG solution space: social innovation, solutions to local problems using ohw as enabler for involving more people into innovation and not reinvent the wheel
+
+---
+
+.left-column[
+## Open science hardware is growing
+]
+.right-column[
+Enablers:
+
+- cheaper electronics
+- access to digital fabrication tools
+- open toolchain (sw for designing, testing, etc)
+
+![evolution of ohw in education](img/growth.gif)
+
+*R. Heradio et al., "Open-Source Hardware in Education: A Systematic Mapping Study," in IEEE Access, vol. 6, pp. 72094-72103, 2018.*
+]
+
+???
+This is just in education, but GOSH applications went from 50 to 120 to 300, new journals, new communities, more projects than ever and documentation platforms
+
+---
+.left-column[
+## GOSH community
+]
+
+.right-column[
+Subgroup of open science movement
+
+Informed by framings:
+- maker and hacker cultures
+- appropriate technology
+- cognitive justice
+
+![open science as an umbrella term](img/osumbrella.jpeg)
+
+*By Robin Champieux at OpenCon 2017, Berlin.*
+
+**'There's no open science without open science hardware'**]
+
+???
+one of those communities is GOSH, network of networks, very diverse, academic, community, artistic, gender and ethnic diverse.
+
+manifesto in 2016, roadmap 2018, hardware ubiquitous by 2025, value driven community, a discussion about tech but also doing and learning
+
+lots of community work, facilitation, besides tech workshops
+
+appropr technology = small-scale, decentralized, labor-intensive, energy-efficient, environmentally sound, and locally autonomous.
+
+cognitive justice = validity of knowledges, all are valid, right to coexist
+
+---
+.left-column[
+  ## Why open science hardware?
+### - Efficient
+]
+.right-column[
+_"Open science hardware makes science better"_
+
+- Real reproducibility
+- Control over vendors
+- Repairability
+- Customization
+- Understanding of processes
+- Better tools (1000 eyes)
+- Cheaper
+
+
+__Very studied within open science__
+]
+
+???
+This is the argument for entering academia, and it was worked a lot by the open access and open data movements
+
+
+---
+.left-column[
+  ## Why open science hardware?
+### - Efficient
+### - Democratic
+]
+.right-column[
+_"Enables alternative futures for science"_
+
+- More research in resource-constrained contexts
+- Way to address knowledge gap
+- Enables co-production of knowledge
+- Capacity building
+- Helps new voices outside academia to emerge
+
+
+__Not so studied, more difficult to assess.__
+]
+
+???
+This is the argument that expands oschw further, some authors have studied it from at enographic point of view (Kera and the science artisans) or by repository mining, analog to software, trying to understand documentation and collaboration models of open hardware (bonvoisin for non electronics, or open design).
+
+However the democratization aspect hasnt been truly assessed
+
+---
+class: middle, center
+
+# Is OScHw a feasible niche for science and technology democratization in Latin America?
+
+???
+The current regime of IP and patents, can oschw be a potential democratizer?
+
+---
+class: middle, center
+
+## A framework for studying change towards democratization
+
+![diagram analytic framework](img/marco.png)
+
+???
+
+- First, I;m interested in studying change, so I chose a literature of transitions that addresses how change happens in sociotechnical systems.
+- Our actor is more than a company or an individual, is a collective, that's why I take the grassroots innovation movaments approach that combines transitions with classical social mov theory.
+- Transitions is in general used for sustainability changes but some authors like stirling have been calling to study transitions to democratization
+- understood as the ability to question technology and the direction of innovation
+- this is a bit new so to turn it operative, I make myself the question:
+
+who participates, and then I go to feminist studies of technology and user led innovation
+how is the relationship between user and tech, and I go to domestication theory
+how is learning turned into agency, and I go to capabilities approach
+
+# tipologia transicion
+
+
+- Proceso de reproducción
+
+Estabilidad del régimen, con un entorno que no lo desafía si no lo estabiliza, hay problemas pero pueden ser resueltos sobre rutas predecibles (trayectorias). A través de cambios incrementales mejora performance.
+
+- Transformación
+
+Presión moderada desde el entorno, los nichos aun no estan estables. El régimen responde modificando la dirección del desarrollo de la innovación. Toman relevancia movimientos sociales, profesionales/científicos/firmas independientes que comienzan a desarrollar alternativas que puedan ser ‘vistas’ por los actores del régimen. Esto implica confrontamiento a nivel político, problemas de poder. En este caso el régimen nuevo deriva del anterior, pero con ajustes acumulativos y reorientaciones.
+
+- Desalineado y Realineado
+
+Cambios amplios, divergentes y repentinos en el entorno afectan al régimen. Si los nichos no están estables, no hay una posibilidad clara de sustitución, por ende emergen múltiples innovaciones que coexisten y compiten por atención y recursos. Finalmente una domina, que será el proto-régimen.
+
+- Sustitución tecnológica
+
+Presión a nivel de contexto combinada con nichos estables, el nicho sustituye al régimen anterior. Asume que las innovaciones radicales se llevaron adelante en los nichos pero no salieron porque el régimen es estable. La difusion toma forma por acumulacion, entrando cada vez en más mercados. En un pathway dirigido tecnológicamente con procesos co-evolutivos posteriores.
+
+-  Reconfiguración
+
+Existen innovaciones en nichos que complementan el desarrollo del régimen y son adoptadas por éste, con el tiempo desatan ajustes en la estructura básica del mismo
+
+- Transformaciones secuenciales
+
+Ante un cambio disruptivo en el contexto, se puede dar una secuencia de cambios que comienza con transformaciones - reconfiguración - posiblemente sustitución o desalineado/realineado
+
+---
+class: middle, center
+
+## Research questions and categories used
+
+![research questions](img/rq.png)
+
+???
+these are the categories from those literatures that I will analyze for each question
+
+---
+.left-column[
+## Methods
+### - Qualitative
+]
+
+.right-column[
+Building of case studies for each area + case study for global movement.
+
+Sources of data:
+
+- Exploratory interviews
+- General survey
+- Semi structured interviews
+- Field notes
+- Public community documents
+- Press articles
+
+Grounded theory _(Glaser y Strauss, 1967; Strauss y Corbin, 2006; Andréu, García-Nieto y Pérez Corbacho, 2007; Soneira, 2007)_
+
+- Open coding, axial coding, selective coding
+- Constant comparison
+- Theoretical sampling
+
+]
+
+???
+- Open coding (without concepts), axial coding (from theory), selective coding (each great family)
+
+- constant comparison between the sources and adding more Sources, this is why I did exploratory work
+
+- determine max of samping cases that adds no more information
+
+
+---
+.left-column[
+## Methods
+### - Qualitative
+### - Quantitative
+]
+
+.right-column[
+Analysis of collaboration using:
+
+- community forum stats
+- repository mining
+
+Complementary content mining of interviews, community documents and press articles, to supplement open coding.
+
+![gosh forum stats](img/forumstat.png)
+
+]
+
+???
+approach of bonvoisin may be useful but how to turn it operative in latam, where most projects dont have full repos
+
+---
+.left-column[
+## Open science tools
+]
+
+.right-column[
+Trying to implement a full open science process:
+
+- Markdown
+- Remark JS
+- Zotero
+- GitHub/GitLab
+- LimeSurvey
+- RQDA / Taguette
+- Python (pandas, spaCy, folium, flask)
+- Jupyter Notebooks
+- Wikidata
+- Dokieli (coming soon...)
+
+![the research process](img/rcycle.png)
+]
+
+???
+difficulties with supervisors revisions, with tools for QDA, with phd courses recommending propietary tools
+
+---
+.left-column[
+## Expected contributions
+]
+
+.right-column[
+Direct products:
+
+- Literature review
+- An open collaborative database of GOSH projects in Latin America
+- Proposal of structure for data (future ontology?)
+- Baseline for policy and community recommendations in the region
+
+Methodological:
+
+- Open science pipeline for STS
+- Framework for studying transitions towards democratization
+
+For the community:
+- Non academic article on history of the community
+- Divulgation articles, academic and extra academic
+]
+
+
+---
+.left-column[
+## Preliminary results
+### - Literature review
+]
+
+.right-column[
+
+Contribution to open hardware literature review
+
+- Open Hardware Zotero library
+
+- Collaborative review in GitLab and GOSH forum
+
+![open hardware Zotero library](img/zotero.png)
+]
+
+???
+open process, communicated to community, asked for input, working on the text now, will publish in journal of community probably
+
+---
+.left-column[
+## Preliminary results
+### - Literature review
+### - GOSH map
+]
+
+.right-column[
+All GOSH projects, categorized
+
+<iframe width="560" height="500" src="http://thessaly.pythonanywhere.com/" frameborder="0"></iframe>
+]
+
+???
+categories from cases, collaborative pipeline through wikidata, but better visualization with folium, working out now how to integrate
+
+---
+.left-column[
+## Preliminary results
+### - Literature review
+### - GOSH map
+### - Pattern for building cases
+]
+
+.right-column[
+Based on interviews to key actors in the global movement
+
+- Performed qualitative Analysis
+
+- Finishing a basic quantitative Analysis
+
+- Will be used as a blueprint for building the local cases
+
+- Provides context to the regional analysis
+]
+---
+.left-column[
+## Preliminary results
+### - Literature review
+### - GOSH map
+### - Pattern for building cases
+### - Contributions to community
+]
+
+.right-column[
+- Database of projects
+- Base structure for ontology discussion
+- GOSH history article
+- Info uploaded to Wikidata
+
+![Wikidata visualization of GOSH projects](img/wdgraph.png)
+]
+
+???
+- writing an article on the history of gosh taking the material I have
+- started uploading info to wikidata, my idea is to spark the discussion about ontologies, as organization of information was detected by community as a challenge for growing
+
+---
+.left-column[
+## Preliminary ideas
+]
+
+.right-column[
+- Spaces in the cracks of openess (citizen science, cognitive justice, 'open can be violent')
+
+- Diversity of framings allows flexibility, increasing possibilities of niche survival
+
+- Value driven combined with material culture (facilitation practice, tech practice) creates new, more democratic repertoires of action (environmental justice, inclusive academia)
+
+- Lead users not only in terms of tech, but also faciltation community adoption (geo factor?)
+
+- GOSH provides a deliberation platform for users-creators: tools become better
+
+- Aided descentralization (pool of resources, divulgation, supply chain, capacity building)
+
+- Repertoires of action: response to disasters, undone science, model artifacts, build capacity in low resources contexts, 'the GOSH method'
+
+]
+
+???
+- some think of gosh as a community, some as a social movement, these views don't interfere as underlying visions are strong, but there's a degree of practice
+
+---
+.left-column[
+## Future steps & needs
+### - Qualitative analysis
+]
+
+.right-column[
+Build cases once interviews from Latin America are complete.
+
+- Explore analogy LatAm vs Global
+
+- Test types proposed
+
+- Feed evidence to framework
+]
+
+???
+role of intermediaries, how is latam vs others different, is the framework useful
+
+---
+.left-column[
+## Future steps & needs
+### - Qualitative analysis
+### - Quantitative analysis
+]
+
+.right-column[
+Hardware and software collaboration processes are different (_Bonvoisin et al, 2018_).
+
+- How is this digital dynamic related to observed collaboration in LatAm cases?
+
+- Can data provide insights on challenges / barriers of the projects?
+
+- Other interesting questions with this data?
+
+- I need to learn how to do this, where to start, which are the right tools, etc?
+]
+
+???
+best reference _Bonvoisin
+
+---
+.left-column[
+## Future steps & needs
+### - Qualitative analysis
+### - Quantitative analysis
+### - Data and structure
+]
+
+.right-column[
+There are ongoing discussions in the bigger hardware community to set an ontology of open hardware projects.
+
+- How to make my data as reusable and useful as possible?
+
+- Which is the best collaborative infrastructure to work on this?
+
+]
+
+---
+
+class: middle, center
+
+# Thank you!
+.footnote[https://thessaly.github.io/opensym2019/]
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
